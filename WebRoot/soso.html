@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>soso.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+    <style type="text/css">
+    #input{
+      border-radius:40px;
+      width:40%;
+      height:50px;
+      font-size:100%;
+    
+    }
+    #search{
+    border-radius:40px;
+    height:50px;
+    font-size:100%;
+    }
+    
+    </style>
+
+  </head>
+  
+  <body >
+  	<div id="layer1" style="position:absolute;overflow: hidden;top:0;left:0;width: 100%;
+	  	height: 30%;z-index: 0;text-align: center">
+		  	<img src="234940-13011Z9314435.jpg" style="width:20%" >
+  	</div>
+  	<div  id="layer2" style="position: absolute; overflow: hidden;top:30%;left:0;height: 70%;
+	  	width: 100%;z-index: 0;background-color: #b4b5a7;text-align: center">
+	      <br>
+	      <form action="servlet/Manage" method="post">
+	        <input type="text" name="keyword" id="input" class="gray" value="重庆理工大学"
+	        onfocus="if(this.value==defaultValue){this.value='';this.className='black'}"
+	         onblur="if(!value){this.value=defaultValue;this.className='gray'}"/>
+	        <input type="submit" value="Search" style="width:10%" id="search">
+	      </form>
+     </div>
+  </body>
+</html>
